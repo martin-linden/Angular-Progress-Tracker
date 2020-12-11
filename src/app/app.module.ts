@@ -8,9 +8,10 @@ import { ButtonModule } from 'primeng/button';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { CardModule } from 'primeng/card';
+import { ChartsComponent } from './components/charts/charts.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, ChartsComponent],
   imports: [
     MenubarModule,
     ButtonModule,
