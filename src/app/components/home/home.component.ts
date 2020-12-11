@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { title } from 'process';
+import { InfoService } from 'src/app/info.service';
+import { InfoInterface } from 'src/app/info-interface';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +10,11 @@ import { title } from 'process';
 })
 export class HomeComponent implements OnInit {
   title = 'Getting started';
+  cardInfo = [];
 
-  constructor() {}
+  constructor(private InfoService: InfoService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.cardInfo = this.InfoService.getProducts();
+  }
 }

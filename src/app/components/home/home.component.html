@@ -1,8 +1,10 @@
 <div class="card-container">
   <h1>{{ title | titlecase }}</h1>
-  <p-card>
-    <img src="../assets/images/usercard.png" alt="" />
-    <h3>See your progress</h3>
-    <p-footer> <p-button>Read More</p-button></p-footer>
+  <p-card *ngFor="let info of cardInfo">
+    <div class="card-content">
+      <img src="{{ info.imageUrl }}" alt="" />
+      <h3>{{ info.title }}</h3>
+      <p-button>Read More</p-button>
+    </div>
   </p-card>
 </div>
