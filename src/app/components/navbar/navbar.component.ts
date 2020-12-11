@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
-      { label: 'Home', icon: 'pi pi-fw pi-home' },
+      { label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/'] },
       { label: 'My Charts', icon: 'pi pi pi-chart-bar' },
       { label: 'Settings', icon: 'pi pi-fw pi-cog' },
     ];
