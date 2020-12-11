@@ -4,7 +4,9 @@
     <div class="card-content">
       <img src="{{ info.imageUrl }}" alt="" />
       <h3>{{ info.title }}</h3>
-      <p-button>Read More</p-button>
+      <a [routerLink]="['', info.Id]">
+        <p-button>Read More</p-button>
+      </a>
     </div>
   </p-card>
 </div>

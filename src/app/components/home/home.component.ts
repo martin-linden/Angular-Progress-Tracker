@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { title } from 'process';
 import { InfoService } from 'src/app/info.service';
-import { InfoInterface } from 'src/app/info-interface';
 
 @Component({
   selector: 'app-home',
